@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block content %}
+<div style="border: 5px dotted #58FAD0; border-radius: 2px; padding: 0px;">
+<center>
+<br><b>ID</b><br>  {{ user.username }}<br><br>
+
+<b>E-MAIL</b><br> {{ user.email }}<br><br>
+<a class="button" href="{% url 'account_reset_password' %}">비밀번호 초기화</a>
+</center>
+</div>
+{% endblock %}
